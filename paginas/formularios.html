@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../estilos/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../multimedia/IMAGENES/pirata.jpg" alt="Logo casa" class="Logo" width="40">
+                    PirataTatoo
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="estilos.html">Estilos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="imagenes.html">Imagenes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="agenda.html">Turnos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1 class="fondo" style="color: red;">Formulario</h1>
+            <form action="enviar.php"
+                method="post"
+                enctype="text/plain" netlify>
+        <h2 class="fondo" style="color: red;">Contacto</h2>
+            <label for="">Nombre</label><input type="text" required placeholder="ingresa tu nombre"><br><br>
+            Email <input type="email" required placeholder="ingresa tu email"><br><br>
+            Teléfono <input type="teléfono" required placeholder="ingresa tu teléfono"><br><br>
+            Edad <input type="number"><br>
+        <h2>Selecciona tu género</h2>
+            <label for="sexo1">genero:</label>
+            hombre <input type="radio" name="sexo" value="hombre"><br>
+            mujer <input type="radio" name="sexo" value="mujer"><br>
+            sin especificar <input type="radio" name="sexo" value="sin especificar" checked><br>
+
+        <h2 class="fondo" style="color: red;">Elige el tipo de estilo con el que te gustaría tatuarte</h2>
+        <label for="estilos1"required>Estilos:</label> 
+            Black and Grey <input type="checkbox">
+            Full Color <input type="checkbox">
+            Hiperrealismo <input type="checkbox">
+            Covers <input type="checkbox">
+
+        <h2 class="fondo" style="color: red;">Tu idea</h2>
+        <p>A continuación contame que es lo que te gustaría tatuarte, tratá de ser lo mas específico que puedas en cuestiones de zonas, dimensiones y tamaños. Te invito a que también subas fotografías de las imagenes modelos que tengas</p>
+        <label for="tu idea"></label><br>
+        <textarea name="area de texto" id="" cols="60" rows="10" placeholder="escribe tu idea" required></textarea><br>
+        <br>
+        <label for="archivos">Adjuntar archivos:</label> <input type="file"required><br>
+        <br>
+        Marca una fecha en la que te gustaría tatuarte<input type="date"required>
+        <br>
+        <label for="Precio">Por último, escogé un maximo de dinero que te gustaria invertir en tu tatuaje</label>
+        <input type="range" name="Precio" id="Precio" min="20000" max="500000" step="500" value="250000">
+        <br>
+        <input type="submit" value="enviar">
+        </form>
+    </main>
+<footer id="pie de pagina">
+    <img class="Logo"src="../multimedia/IMAGENES/pirata.jpg" alt="Logo casa">
+        <ul>
+            <li> 
+                
+                <a href="index.html">INICIO</a>
+                <a href="paginas/imagenes.html">ESTILOS</a>
+                <a href="paginas/imagenes.html">IMAGENES</a>
+                <a href="paginas/Agenda.html"> TURNOS</a>
+                <a href="paginas/contacto.html">CONTACTO</a>
+            </li>
+        </ul>  
+</footer> 
+</body>
+</html>

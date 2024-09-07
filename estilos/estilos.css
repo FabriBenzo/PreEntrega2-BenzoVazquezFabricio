@@ -1,0 +1,65 @@
+/* estilos.css */
+h1 {
+    font-family: 'Lobster', cursive;
+}
+
+.carousel-item h5 {
+    font-family: 'Lobster', cursive;
+}
+.Logo {
+    height: 40px;
+    width: 40px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+#imagenesInicio img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #333;
+    color: white;    
+}
+
+footer img {
+    height: 40px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.carousel-item img {
+    height: 500px; 
+    object-fit: cover; 
+}
+
+.horizontal-list {
+    list-style: none; /* Remove default bullets */
+    display: flex; /* Align list items horizontally */
+    justify-content: center; /* Center the list items */
+    padding-left: 0; /* Remove default padding */
+}
+
+.horizontal-list li {
+    margin-right: 20px; /* Add spacing between items */
+    background: url('../multimedia/IMAGENES/maquina-de-tatuaje.png') no-repeat left center;
+    background-size: 20px 20px; /* Adjust the size of the bullet image */
+    padding-left: 30px; /* Space between the image and the text */
+}
+
+.estilosImg {
+        height: 250px; /* Set the desired height */
+        object-fit: cover; /* Ensures the image covers the given height and width */
+}
+
+.estilosContainer a{
+    text-decoration: none; /* Removes the underline */
+    color: inherit; 
+}
+
